@@ -182,15 +182,23 @@
     <Compile Include="Tools\SqlDbParameter.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\2017-11-11_1502.png" />
     <Content Include="Content\banner-bg.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dog.png" />
+    <Content Include="Content\DPC-dog-park.jpg" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\free-vector-ericlemerdy-cute-sad-dog-clip-art_106049_Ericlemerdy_Cute_Sad_Dog_clip_art_hight.png" />
+    <Content Include="Content\lc-extension-googlemaps.png" />
+    <Content Include="Content\Pet Hurricane.jpg" />
     <Content Include="Content\pexels-photo-551628.jpeg" />
+    <Content Include="Content\Pics\1200px-IPhone_5.png" />
+    <Content Include="Content\trauma-cheryl-11.20.14.jpg" />
+    <Content Include="Content\собака.jpg" />
     <Content Include="fonts\font-awesome.css" />
     <Content Include="Content\intro-bg.jpg" />
     <Content Include="Content\ipad.png" />
