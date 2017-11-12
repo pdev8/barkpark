@@ -238,6 +238,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Controllers\LoginController.js" />
     <Content Include="Scripts\Controllers\MapController.js" />
     <Content Include="Scripts\gulpfile.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
