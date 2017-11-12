@@ -26,7 +26,7 @@
     <link href="/Content/landing-page.css" rel="stylesheet" />
 </head>
 
-<body>
+<body ng-app="barkApp" ng-controller="loginController as lc">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" ng-click="lc.login()" href="#">Account</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +120,7 @@
                     </p>
                 </div>
                 <div class="col-lg-5 ml-auto order-lg-1">
-                    <img style="width:280px"src="~/Content/Pet Hurricane.jpg" />
+                    <img style="width:280px" src="~/Content/Pet Hurricane.jpg" />
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                     </p>
                 </div>
                 <div class="col-lg-5 mr-auto ">
-                    <img style="padding-left: 50px; width:190px"src="~/Content/Pics/1200px-IPhone_5.png" />
+                    <img style="padding-left: 50px; width:190px" src="~/Content/Pics/1200px-IPhone_5.png" />
                 </div>
             </div>
 
@@ -220,8 +220,13 @@
     <!-- Bootstrap core JavaScript -->
     <script src="/Scripts/jquery.js"></script>
     <script src="/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsDgfiB7P_cbO21WyCJEIlt4qQyphJQ1A"></script>
- 
+
+    <script src="~/Scripts/App/App.js"></script>
+    <script src="~/Scripts/Controllers/LoginController.js"></script>
+
 
 </body>
 
