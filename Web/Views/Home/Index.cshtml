@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" ng-click="lc.login()" href="#">Account</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#login" href="#">Account</a>
                     </li>
                 </ul>
             </div>
@@ -214,6 +214,37 @@
             <p class="copyright text-muted small">Copyright &copy; Michelle's Team 2017.  All Rights Reserved.</p>
         </div>
     </footer>
+
+    <div class="modal fade" id="login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label>Username</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Create Account</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="lc.login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 

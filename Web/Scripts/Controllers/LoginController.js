@@ -8,9 +8,10 @@
 
         vm.login = _login;
 
-        vm.$onInit = _init;
+        //vm.$onInit = _init;
 
         function _login() {
+            console.log("clicked");
             location.href = "Member";
         }
     }
