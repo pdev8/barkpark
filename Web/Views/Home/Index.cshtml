@@ -1,31 +1,264 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+
+    Layout = "";
 }
 
-<div class="jumbotron">
-    <h1>Bark at the Park</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bark at the Park</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="/fonts/font-awesome.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="/Content/landing-page.css" rel="stylesheet" />
+</head>
+
+<body ng-app="barkApp" ng-controller="loginController as lc">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bark at the Park</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#login" href="#">Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="intro-message">
+                <h1>Meet Me At The Paw-rk</h1>
+                <h3>Let's have our legal guardians mate!</h3>
+                <hr class="intro-divider">
+                @*<ul class="list-inline intro-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-twitter fa-fw"></i>
+                                <span class="network-name">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-github fa-fw"></i>
+                                <span class="network-name">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-linkedin fa-fw"></i>
+                                <span class="network-name">Linkedin</span>
+                            </a>
+                        </li>
+                    </ul>*@
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Find a friend at the park:<br>Search using maps</h2>
+                    <p class="lead">
+                        Check-in at local dog parks to notify your friends about a meet-up. Or locate your friends using
+                        our map service and search for nearby events and services!
+                    </p>
+                </div>
+                <div class="col-lg-5 mr-auto">
+                    <img style="width:450px" src="~/Content/2017-11-11_1502.png" />
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 mr-auto order-lg-2">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Track local events and meetups</h2>
+                    <p class="lead">
+                        Keep tabs on upcoming hosted events for your best furry friend! Search
+                        for local trainers and dog walkers around your area.
+                    </p>
+                </div>
+                <div class="col-lg-5 ml-auto order-lg-1">
+                    <img style="width:280px" src="~/Content/Pet Hurricane.jpg" />
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 ml-auto">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Find out information about<br>the dogs at the park</h2>
+                    <p class="lead">
+                        View detail information about the owner and their dogs (breed, age, rating)
+                    </p>
+                </div>
+                <div class="col-lg-5 mr-auto ">
+                    <img style="padding-left: 50px; width:190px" src="~/Content/Pics/1200px-IPhone_5.png" />
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-a -->
+
+    <aside class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <h2>Connect to start Bark at the Park</h2>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-twitter fa-fw"></i>
+                                <span class="network-name">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-github fa-fw"></i>
+                                <span class="network-name">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                <i class="fa fa-linkedin fa-fw"></i>
+                                <span class="network-name">Facebook</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </aside>
+    <!-- /.banner -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#services">Services</a>
+                </li>
+                <li class="footer-menu-divider list-inline-item">&sdot;</li>
+                <li class="list-inline-item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; Michelle's Team 2017.  All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <label>Username</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div>
+                            <label>Password</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Create Account</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="lc.login()">Login</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/Scripts/jquery.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsDgfiB7P_cbO21WyCJEIlt4qQyphJQ1A"></script>
+
+    <script src="~/Scripts/App/App.js"></script>
+    <script src="~/Scripts/Controllers/LoginController.js"></script>
+
+
+</body>
+
+</html>
